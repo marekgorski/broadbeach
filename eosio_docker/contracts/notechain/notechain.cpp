@@ -19,7 +19,7 @@ class notechain : public eosio::contract {
   private:
     bool isnewuser( account_name user ) {
       notetable noteobj(_self, _self);
-      // get object by secordary key
+      // get object by secondary key
       auto notes = noteobj.get_index<N(getbyuser)>();
       auto note = notes.find(user);
 
@@ -64,7 +64,7 @@ class notechain : public eosio::contract {
           address.timestamp   = now();
         });
       } else {
-        // get object by secordary key
+        // get object by secondary key
         auto notes = obj.get_index<N(getbyuser)>();
         auto &note = notes.get(_user);
         // update object

@@ -11,6 +11,7 @@ frontend/build
 **/*.abi
 **/*.wasm
 **/*.wast
+**/*.txt
 
 #blockchain data
 **/data/*

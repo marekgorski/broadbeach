@@ -18,8 +18,8 @@ You get to load up your app with your donation amount - then you allocate the fu
 ## Demo
 * Alice (clean the beach)
 * Belinda (clean the ocean)
-* Bob's allocation 60/40 (passive)
 * Adam's allocation (active)
+* Bob's allocation 60/40 (passive)
 
 
 

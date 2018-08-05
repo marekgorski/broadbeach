@@ -38,3 +38,7 @@ To limit the required effort from WWF and to run a contained pilot, we suggest a
 
 ### source
 https://www.sbs.com.au/topics/life/culture/article/2017/12/11/do-australians-give-enough-christmas
+
+### competition entry registration
+https://platform.younoodle.com/competition/eoshackathon
+

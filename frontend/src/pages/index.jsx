@@ -134,11 +134,12 @@ class Index extends Component {
             {new Date(timestamp*1000).toString()}
           </Typography>
           <Typography component="pre">
-            {note}
+            has ${note}
           </Typography>
         </CardContent>
       </Card>
     );
+
     let noteCards = noteTable.map((row, i) =>
       generateCard(i, row.timestamp, row.user, row.note));
 
@@ -147,8 +148,7 @@ class Index extends Component {
         <AppBar position="static" color="default">
           <Toolbar>
             <Typography variant="title" color="inherit">
-              Note Chain
-            </Typography>
+              Broadbeach (using: eosio bootstrap) @ Sydney 2018 EOS Hackathon            </Typography>
           </Toolbar>
         </AppBar>
         {noteCards}
@@ -171,7 +171,7 @@ class Index extends Component {
             <TextField
               name="note"
               autoComplete="off"
-              label="Note (Optional)"
+              label="Amount to send"
               margin="normal"
               multiline
               rows="10"
@@ -182,7 +182,7 @@ class Index extends Component {
               color="primary"
               className={classes.formButton}
               type="submit">
-              Add / Update note
+              Send Amount
             </Button>
           </form>
         </Paper>
@@ -191,7 +191,10 @@ class Index extends Component {
           <br/><br/>
           accounts = { JSON.stringify(accounts, null, 2) }
         </pre>
+        <div class="portfolio-selection"><img src="active-portfolio.png"/></div>
+        <div class="portfolio-selection"><img src="passive-portfolio.png"/></div>
       </div>
+
     );
   }
 
